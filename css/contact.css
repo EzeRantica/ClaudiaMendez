@@ -1,0 +1,73 @@
+.section_form {
+	width: 650px;
+	height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.div_form {
+	width: 100%;
+	height: 100%;
+	margin-top: 70px;
+}
+.form {
+	background-color: #d4d3ce;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+}
+.nombre {
+	width: 60%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	font-family: Times New Roman;
+	font-size: 17px;
+}
+.email {
+	width: 60%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding-left: 10px;
+	font-family: Times New Roman;
+	font-size: 17px;
+}
+.caja_de_Texto {
+	width: 70%;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding-left: 10px;
+	font-family: Times New Roman;
+	font-size: 17px;
+}
+.boton_submit {
+	width: 10%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	border: 2px solid #c4c4c4;
+	color: black;
+	transition: 0.2s ease-in-out;
+}
+.boton_submit:hover {
+	display: block;
+	background-color: #c4c4c4;
+	color: white;
+	border: 2px solid black;
+}
+.mensaje {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mensaje h1 {
+	font-size: 21px;
+	color: green;
+}

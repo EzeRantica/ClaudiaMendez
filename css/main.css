@@ -1,0 +1,432 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Questrial', sans-serif;
+	background-color: #d4d3ce;
+}
+
+
+								/* HEADER */
+
+
+header {
+	background-color: #09141d;
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	position: relative; 
+	margin-bottom: 25px;
+}
+
+.topNav {
+	width: 24%;
+	height: 100%;
+	position: absolute;
+	left: 10%;
+	top: -10px;
+	background-color: #09141d;
+}
+.inicioNav {
+	width: 100%;
+	height: 100%;
+}
+.inicioNavUl {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 100%;
+	width: 350px;
+	margin: auto;
+	align-items: flex-end;
+}
+.inicioNavLink {
+	width: 28%;
+	height: 20px;
+	text-decoration: none;
+	color: #e0dfde;
+	border-bottom: 2px solid #e0dfde;
+	font-size: 1em;
+	text-align: center;
+	font-weight: bold;
+	transition: 0.2s ease-in-out;
+	padding-top: 10px;
+}
+.inicioNavLink:focus {
+	outline: 0;
+}
+.inicioNavLink:hover {
+	border-bottom: 2px solid #f0cc88;
+	height: 23px;
+	color: #f0cc88;
+}
+
+								/* SECCIÃ“N DE ZAPATOS */
+
+
+.zGaleria {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	min-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nuevoItemZapato {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: #2d2d2d;
+	width: 1180px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+.ImgItemZapato {
+	flex-grow: 1;
+	flex-basis: 0;
+	height: 100%;
+}
+.ImgItemZapato img {
+	width: auto;
+	height: 100%;
+}
+.ImgItemZapato img:hover {
+	cursor: pointer;
+}
+.izquierda {
+	order: 1;
+	padding-right: 2.5%;
+}
+.izquierda h1 {
+	text-align: right;
+}
+.derecha {
+	order: 10;
+}
+.DesItemZapato {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-grow: 1;
+	
+	font-family: 'Raleway', sans-serif;
+	width: auto;
+	height: 100%;
+}
+.tituloDes {
+	width: auto;
+	height: 40%;
+}
+.tituloDes h1 {
+	font-size: 22px;
+	margin-top: 7.5%;
+	color: #7e786b;
+}
+.separador {
+	height: 1px;
+	width: 100%;
+	border-top: 1px solid #9b968b;
+	margin-right: auto;
+}
+.cuerpoDes {
+	width: auto;
+	height: 100%;
+	padding-top: 20px;
+	font-size: 18px;
+	color: #545454;
+	z-index: 1;
+}
+.shadow {
+	-moz-box-shadow:    10px 10px 10px 6px #ccc;
+ 	-webkit-box-shadow: 10px 10px 10px 6px #ccc;
+	box-shadow:         10px 10px 10px 6px #ccc;
+}
+.Sombra {
+	-webkit-animation: shadow-drop-bl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+			animation: shadow-drop-bl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
+	width: 60%;
+	height: 120px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.Sombra2 {
+	width: 60%;
+	height: 120px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+						/*Animacion de SOMBRA */
+
+
+@-webkit-keyframes shadow-drop-bl {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-bl {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+						/*Animacion de SOMBRA 2*/
+@-webkit-keyframes shadow-drop-2-tr {
+  0% {
+    -webkit-transform: translateZ(0) translateX(100px) translateY(0);
+            transform: translateZ(0) translateX(100px) translateY(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(0px) translateY(0px);
+            transform: translateZ(50px) translateX(0px) translateY(0px);
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.55);
+  }
+}
+@keyframes shadow-drop-2-tr {
+  0% {
+    -webkit-transform: translateZ(0) translateX(100px) translateY(0);
+            transform: translateZ(0) translateX(100px) translateY(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(0px) translateX(0px) translateY(0px);
+            transform: translateZ(0px) translateX(0px) translateY(0px);
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.55);
+  }
+}
+			
+									/* FOOTER */
+
+
+footer {
+	width: 100%;
+	height: 70px;
+	background-color: #09141d;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+
+}
+.footerUno {
+	width: 350px;
+	height: 70px;
+	padding-left: 20px;
+}
+.footerUno h1 {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	line-height: 70px;
+}
+.footerDos {
+	height: 100%;
+}
+.footerDos img {
+	display: block;
+	height: 100%;
+}
+
+								/* ZAPATO EN GRANDE */
+
+.zapatoGrande {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	order: 2;
+
+	visibility: hidden;
+	width: 70%;
+	background-color: #d4d3ce;
+	border-radius: 4px;
+	overflow: visible;
+    /*margin-top: 2em;*/
+
+	transition: 0.3s ease-in-out;
+	z-index: 100;
+	font-family: 'Questrial', sans-serif;
+}
+.zapatoGrande_img {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	overflow: hidden;
+	width: 100%;
+}
+.zapatoGrande_img img {
+	width: 99%;
+	height: auto;
+	padding: 5px;
+	z-index: 100;
+}
+.fondo_zapatoGrande {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.55);
+	z-index: 90;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+								/* CHAMBIO DE IMAGEN GRANDE */
+.cambio_imagen_div {
+	width: 6em;
+	height: 6em;
+	background-color: #bfbfbf;
+	outline: none;
+	transition: 0.15s ease-in-out;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cambio_imagen_button {
+	width: 90%;
+    height: 90%;
+    border: 0;
+    background-color: #bfbfbf;
+    color: #5d5d5d;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    font-family: "nice";
+    z-index: 110;
+    outline: none;
+    transition: 0.15s ease-in-out;
+}
+.cambio_imagen_div:hover, .cambio_imagen_button:hover {
+	background-color: white;
+	cursor: pointer;
+}
+.cambio_izquierda {
+	order: 1;
+}
+.cambio_derecha {
+	order: 3;
+}
+
+								/* ZAPATO GRANDE DISPLAY */
+.zapatoG1, #blanca1, #blanca2, #blanca3, .zapatoG2, .zapatoG3, .zapatoG4, .zapatoG5, .zapatoG6, .zapatoG7{
+	display: none;
+}
+
+								/* BOTONES */
+.MLButton {
+	display: flex;
+	width: 8.5em;
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	border: 2px solid #2A1D09;
+	border-radius: 4px;
+	color: #545454;
+	font-size: 1.58em;
+	transition: 0.15s ease-in-out;
+	z-index: 10;
+}
+.bPrecio, .bTexto {
+	width: 50%;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.bPrecio {
+	padding-right: 10px;
+	padding-left: 10px;
+	transition: 0.15s ease-in-out;
+}
+.bTexto {
+	padding-left: 10px;
+	margin-right: 10px;
+}
+.MLButton:hover .bPrecio {
+	background-color: black;
+	color: white;
+}
+.MLButton:hover {
+	border: 2px solid black;
+	color: black;
+}
+
+.MLButtonIzquierda {
+	display: flex;
+	width: 8.5em;
+	text-decoration: none;
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	border: 2px solid #2A1D09;
+	border-radius: 4px;
+	color: #545454;
+	font-size: 1.58em;
+	transition: 0.15s ease-in-out;
+	z-index: 10;
+}
+.MLButtonIzquierda:hover .bPrecio {
+	background-color: black;
+	color: white;
+}
+.MLButtonIzquierda:hover {
+	border: 2px solid black;
+	color: black;
+}
+.btn_cerrar {
+	background-color: #bfbfbf;
+    width: 3em;
+    height: 3em;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    border-radius: 100%;
+    border: 0;
+    outline: none;
+    transition: 0.15s ease-in-out;
+}
+.btn_cerrar:hover {
+	background-color: #dddddd;
+	cursor: pointer;
+}
+
+
+
+								/* MICELAÃ‘OS */
+.margen {
+	display: hidden;
+	width: 100%;
+	height: 50px;
+}

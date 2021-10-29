@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Claudia Mendez</title>
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mobile-contact.css">
+	<link rel="stylesheet" href="css/mobile-main.css">
+	<link rel="stylesheet" type="script" href="jquery/jquery-3.2.1.min">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.gif" />
+</head>
+<body>
+	<header>
+		<div class="topNav">
+			<nav class="inicioNav">
+				<ul class="inicioNavUl">
+					<a href="index.html" class="inicioNavLink">
+						<li class="btn_topNav" id="inicio">INICIO</li>
+					</a>
+					<a href="#" class="inicioNavLink">
+						<li class="btn_topNav" id="contacto">CONTACTO</li>
+					</a>
+					<a href="#" class="inicioNavLink">
+						<li class="btn_topNav" id="about">ABOUT</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="Sombra2" style="background-image: url('img/Upper-Logo-Claudia-Mendez.png'); background-size: 100% 100%;">
+			<div class="logoCM">
+
+			</div>
+		</div>
+	</header>
+
+	<section class="section_form">
+		<div class="div_form">
+			<form action="jquery/contacto.php" method="post" class="form">
+				<input type="text" maxlength="30" class="nombre" name="nombre" placeholder="Nombre" autocomplete="name">
+				<input type="text" class="email" name="email" placeholder="E-Mail" autocomplete="email">
+				<textarea type="textbox" class="caja_de_Texto" name="mensaje" placeholder="Ingresa el mensaje a enviar."></textarea>
+				<input type="submit" class="boton_submit" name="enviar" value="Enviar">
+			</form>
+		</div>
+	</section>
+	<div style="margin-left: 40.5%;" class="mensaje">
+		<h1>¡EL MENSAJE FUE ENVIADO CON EXITO!</h1>		
+	</div>
+
+	<footer style="position: fixed; bottom: 0px;">
+		<div class="footerUno">
+			<h1>© 2016 CLAUDIA MENDEZ  |  Todos los derechos reservados.</h1>
+		</div>
+		<div class="footerDos">
+			<img src="img/cm_logo.png" alt="Claudia Mendez Logo" name="logoCm"	>
+		</div>
+	</footer>
+
+	<script src="jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="jquery/scripts_001.js"></script>
+</body>
+</html>
